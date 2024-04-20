@@ -1,0 +1,16 @@
+.submenu {
+    display: none;
+}
+
+.menu:hover+.submenu {
+    display: block;
+    margin-right: 20px;
+}
+
+.posizione {
+    text-align: center;
+    background-color: orange;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 20px;
+}
