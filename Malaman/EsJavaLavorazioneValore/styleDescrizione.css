@@ -1,0 +1,21 @@
+img{
+    height: 10%;
+    width: 25%;
+}
+h3{
+    font-family: 'Times New Roman';
+    background-color: black;
+    color:gold;
+    display: inline;
+}
+p{
+    font-family: 'Times New Roman';
+    background-color: black;
+    color:gold;
+    display: inline;
+}
+button{
+    background-color: black;
+    color: gold;
+    border-radius: 30%;
+}
