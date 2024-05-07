@@ -1,0 +1,10 @@
+.borderDiv{
+    border: 3px;
+    border-color: magenta;
+    border-style:dashed;
+}
+.borderP{
+    border: 3px;
+    border-color: rgb(203, 248, 3);
+    border-style:dashed;
+}
