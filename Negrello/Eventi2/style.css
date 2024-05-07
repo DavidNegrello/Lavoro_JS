@@ -1,0 +1,8 @@
+.borderDiv{
+    border-style: groove;
+    border-color: chocolate;
+}
+.borderP{
+    border-style: dotted;
+    border-color: teal;
+}
