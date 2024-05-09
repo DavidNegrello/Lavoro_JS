@@ -1,8 +1,10 @@
-//const burgerMenu = document.querySelector('.burger-menu');
-//const navLinks = document.querySelector('.nav-links');
-
-//console.log('JavaScript code is running');
-
-//burgerMenu.addEventListener('click', () => {
-//navLinks.classList.toggle('open');
-//});
+//document.getElementById("contact-form").addEventListener("submit", (event) => {
+    //event.preventDefault();
+  
+//    const name = document.getElementById("name").value;
+ //   const email = document.getElementById("email").value;
+ // 
+ //   alert(`Hello, ${name}! Your message has been sent to ${email}.`);
+  
+ //   document.getElementById("contact-form").reset();
+ // });
