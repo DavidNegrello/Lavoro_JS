@@ -1,0 +1,14 @@
+.conteiner{
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    border: 5px solid rgb(15, 228, 86);
+    background-color: aquamarine;
+    margin: 15%;
+}
+input[type = "text"],input[type = "password"],input[type = "submit"]{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+}
