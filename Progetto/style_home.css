@@ -16,8 +16,14 @@
     --text-color:black;
     --bg-color:white;
 }
+img{
+    width: 100%;
+}
+body{
+    color: var(--text-color);
+}
 .Container{
-    max-width: 1068px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -66,8 +72,62 @@ header{
 #search-icona{
     font-size: 24px;
     cursor: pointer;
+    color: var(--bg-color);
 }
 .search-box{
     position: absolute;
     top: 110%;
+    right: 0;
+    left: 0;
+    background: var(--bg-color);
+    box-shadow: 4px 4px 20px rgb(15, 54, 55 /10%);
+    border: 1px solid var(--main-color);
+    border-radius: 0.5rem;
+    clip-path: circle(0% at 100% 0%); /*Per avere la barra di ricerca chiusa se non viene premuto"*/
+}
+.search-box.attivo{
+    clip-path: circle(144% at 100% 0%); /*Per aprire la barra di ricerca quando si preme */
+    transition: 0.4s;   /*Velocità di "apertura"*/
+}
+.search-box input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+}
+/*Home*/
+section{
+    padding: 4rem 0 2rem;
+}
+.home{
+    max-width: 1500px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    min-height: 900px;
+    align-items: center;
+    background: url(Immagini/rs7_mansoryjpeg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+.home-contenuto{
+    padding-left: 10rem;
+    padding-bottom: 20.5rem;
+}
+.home-contenuto h1{
+    font-size: 2.4rem;
+}
+.home-contenuto span{
+    color: var(--main-color);
+}
+.home-contenuto p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.2rem;
+}
+.schizza{
+    padding: ;
 }
