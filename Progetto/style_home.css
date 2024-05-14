@@ -137,3 +137,9 @@ section{
 .schizza:hover{
     background: rgba(0, 136, 255, 0.809);
 }
+/*Selezione marca*/
+.style-img{
+    width: 30rem;
+    height: 16.2rem;
+    display: flex;
+}
