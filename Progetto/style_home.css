@@ -11,7 +11,8 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-:root{
+
+:root{  /*Colori predefiniti (sono variabili)*/
     --main-color:red;
     --text-color:black;
     --bg-color:white;
@@ -21,6 +22,7 @@ img{
 }
 body{
     color: var(--text-color);
+    background-color: rgb(118, 115, 111);
 }
 .Container{
     max-width: 1200px;
@@ -97,7 +99,8 @@ header{
     background: transparent;
     font-size: 1rem;
 }
-/*Home*/
+
+/*==========Home==========*/
 section{
     padding: 4rem 0 2rem;
 }
@@ -137,12 +140,116 @@ section{
 .schizza:hover{
     background: rgba(0, 136, 255, 0.809);
 }
-/*Selezione marca*/
-.style-img{
-    width: 14.5%;
-    min-height: 300px;
-    display: flex;
-    max-width: 1200px;
-    margin-left: 36%;
-    margin-right: 30%;
+
+/*===========Selezione marca===========*/
+
+.generale-container-card{
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+    margin-left: 3%;
+    margin-right: auto;
 }
+.card-container{
+    display: flex;
+    row-gap: 3.5rem;
+}
+.card-article{
+    position: relative;
+}
+.card-immagine{
+    width: 350px;
+    margin-right: 5rem;
+    border-radius: 1.5rem;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 10%;
+    height: 17rem;
+}
+.card-dati{
+    width: 280px;
+    background-color: var(--bg-color);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+.card-descrizione{
+    display: block;
+    font-size: x-small;
+    margin-bottom: .25rem;
+}
+.card-bottone {
+    text-decoration: none;
+    font-size: x-small;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.card-bottone:hover{
+    text-decoration: underline;
+}
+
+.card-article:hover .card-dati {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+  }
+  
+  .card-article:hover {
+    animation: remove-overflow 2s forwards;
+  }
+  
+  .card-article:not(:hover) {
+    animation: show-overflow 2s forwards;
+  }
+  
+  .card-article:not(:hover) .card-dati {
+    animation: remove-data 1s forwards;
+  }
+
+  /* Animazioni delle card */
+@keyframes show-data {
+    50% {
+      transform: translateY(-10rem);
+    }
+    100% {
+      transform: translateY(-7rem);
+    }
+}
+  
+  @keyframes remove-overflow {
+    to {
+      overflow: initial;
+    }
+}
+  
+@keyframes remove-data {
+    0% {
+      transform: translateY(-7rem);
+    }
+    50% {
+      transform: translateY(-10rem);
+    }
+    100% {
+      transform: translateY(.5rem);
+    }
+}
+  
+@keyframes show-overflow {
+    0% {
+      overflow: initial;
+      pointer-events: none;
+    }
+    50% {
+      overflow: hidden;
+    }
+}
+ 
