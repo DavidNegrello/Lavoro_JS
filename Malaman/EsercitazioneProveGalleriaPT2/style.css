@@ -1,0 +1,33 @@
+div.gallery {
+    margin: 2.5%;
+    border: 3px solid rgb(201, 243, 13);
+    float: left;
+    width: 40%;
+  }
+  div.gallery:hover {
+    border: solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  h2.desc {
+    padding: 7px;
+    text-align: center;
+  }
+  div.desc{
+    text-align: center;
+  }
+.bottone{
+  border-color: transparent;
+background-color: yellow;
+color: blue;
+font-style: italic;
+}
+button.bottone:hover{
+  border-color: aqua;
+  color:blueviolet;
+  background-color: transparent;
+} 
