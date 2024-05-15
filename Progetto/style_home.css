@@ -142,6 +142,9 @@ section{
 }
 
 /*===========Selezione marca===========*/
+#marche{
+
+}
 
 .generale-container-card{
     display: grid;
@@ -184,14 +187,14 @@ section{
 }
 .card-descrizione{
     display: block;
-    font-size: x-small;
+    font-size: larger;
     margin-bottom: .25rem;
 }
 .card-bottone {
     text-decoration: none;
-    font-size: x-small;
+    
     font-weight: 500;
-    color: var(--text-color);
+    color: blue;
 }
 .card-bottone:hover{
     text-decoration: underline;
