@@ -23,11 +23,11 @@
 
             <!--Lista nella navbar-->
             <ul class="navbar">
-                <li><a href="" class="attivo">Home</a></li>
-                <li><a href="">Cars</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">More info.</a></li>
+                <li><a href="#home" class="attivo">Home</a></li>
+                <li><a href="#Cars">Cars</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><a href="#More info.">More info.</a></li>
             </ul>
 
             <!--Ricerca-->
@@ -52,38 +52,56 @@
     </section>
 
     <!--Selezione marche-->
-    <h1 id="marche">Macchine disponibili</h1>
-    <div class="generale-container-card">
-        <div class="card-container">
-            <!--Card 1-->
-            <article class="card-article">
-                <img src="Immagini/Menu/classG_selezione.jpeg" alt="" class="card-immagine">
+    <section id="Cars" class="spaziatura">
+        <h1 id="posizione" >AAAAAAAAAAAAA</h1>
+        <div class="generale-container-card" >
+            <div class="card-container">
+                <!--Card 1-->
+                <article class="card-article">
+                    <img src="Immagini/Menu/mercedes_logo.jpeg" alt="" class="card-immagine">
 
-                <div class="card-dati">
-                    <span class="card-descrizione">Mercedes</span>
-                    <a href="" class="card-bottone">Leggi</a>
-                </div>
-            </article>
-            <!--Card 2-->
-            <article class="card-article">
-                <img src="Immagini/Menu/bmw-x3-m_selezione.jpg" alt="" class="card-immagine">
+                    <div class="card-dati">
+                        <span class="card-descrizione">Mercedes</span>
+                        <a href="" class="card-bottone">Leggi</a>
+                    </div>
+                </article>
+                <!--Card 2-->
+                <article class="card-article">
+                    <img src="Immagini/Menu/bmw_logo.jpeg" alt="" class="card-immagine">
 
-                <div class="card-dati">
-                    <span class="card-descrizione">BMW</span>
-                    <a href="" class="card-bottone">Leggi</a>
-                </div>
-            </article>
-            <!--Card 3-->
-            <article class="card-article">
-                <img src="Immagini/Menu/Q8_selezione.jpg" alt="" class="card-immagine">
+                    <div class="card-dati">
+                        <span class="card-descrizione">BMW</span>
+                        <a href="" class="card-bottone">Leggi</a>
+                    </div>
+                </article>
+                <!--Card 3-->
+                <article class="card-article">
+                    <img src="Immagini/Menu/audi_logo.jpeg" alt="" class="card-immagine">
 
-                <div class="card-dati">
-                    <span class="card-descrizione">Audi</span>
-                    <a href="" class="card-bottone">Leggi</a>
+                        <div class="card-dati">
+                            <span class="card-descrizione">Audi</span>
+                            <a href="" class="card-bottone">Leggi</a>
+                        </div>
+                    </article>
                 </div>
-            </article>
+            </div>
+    </section>
+    <!--About / maps-->
+    <section class="contact Container spaziatura" id="posizione">
+        <h1 id="About" class="maps"><span>Contact</span>us </h1>
+        <div class="fila">
+            <div id="map">
+                <iframe id="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11263.815111214883!2d11.84640025!3d45.107004999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4055020a54b1b277%3A0xa60a519e6911fea3!2sMarangoni%20claudio!5e0!3m2!1sit!2sit!4v1715954720198!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form>
+                <h3>Tocca l'erba</h3>
+                <button class="box" id="mappa1">Primo magazzino</button>
+                <button class="box" id="mappa2">Secondo magazzino</button>
+                <button class="box" id="mappa3">Terzo magazzino</button>
+            </form>
         </div>
-    </div>
+    </section>
+
 
     <!--Collegamento a javascript-->
     <script src="home_script.js"></script>

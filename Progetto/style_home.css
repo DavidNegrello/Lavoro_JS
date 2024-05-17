@@ -29,6 +29,15 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.spaziatura{
+    padding-top: 6rem;
+}
+#posizione{
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 3rem;
+    color: var(--text-color);
+}
 header{
     display: block;
     width: 100%;
@@ -42,6 +51,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 20px 35px;
+    background: rgba(98, 97, 95, 0.623);
 }
 #menu-icona{
     font-size: 24px;
@@ -142,15 +152,11 @@ section{
 }
 
 /*===========Selezione marca===========*/
-#marche{
-
-}
-
 .generale-container-card{
     display: grid;
     place-items: center;
     margin-inline: 1.5rem;
-    padding-block: 5rem;
+    padding-block: 4rem;
     margin-left: 3%;
     margin-right: auto;
 }
@@ -256,3 +262,20 @@ section{
     }
 }
  
+/*===========Mappa===========*/
+.box {
+    font-size: 1.7rem;
+    color: var(--text-color);
+}
+.contact .fila{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.contact .fila form{
+    flex: 1 1 5rem;
+    padding: 2rem;
+    border: groove white;
+    border-radius: .5rem;
+    box-shadow: rgb(15, 54, 55 /10%);
+}
