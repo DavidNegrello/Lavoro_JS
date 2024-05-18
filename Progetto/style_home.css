@@ -266,6 +266,9 @@ section{
 .box {
     font-size: 1.7rem;
     color: var(--text-color);
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
 }
 .contact .fila{
     display: flex;

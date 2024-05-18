@@ -16,12 +16,10 @@ const cambiaMapButton=[
 var mapIframe = document.getElementById("map-iframe");
 
 
-let newMap1Url = "";
-let newMap2url="" ;
-let newMap3url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11263.815111214883!2d11.84640025!3d45.107004999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4055020a54b1b277%3A0xa60a519e6911fea3!2sMarangoni%20claudio!5e0!3m2!1sit!2sit!4v1715954720198!5m2!1sit!2sit";
+
 
 cambiaMapButton[0].addEventListener("click", () => {
-  mapIframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78186.81884493981!2d12.0846176068804!3d44.96567432694127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e883a6083e793%3A0xab8791b58fa0deed!2sAgriturismo%20Casa%20Ramello!5e0!3m2!1sit!2sit!4v1715957782654!5m2!1sit!2sit";
+  mapIframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.6814415337694!2d11.91075697626913!3d45.375422971072624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477edb482a4cf2ff%3A0xc699d62aced72213!2sVia%20G.%20Rossa%2C%208%2C%2035020%20Ponte%20San%20Nicol%C3%B2%20PD!5e0!3m2!1sit!2sit!4v1716009672589!5m2!1sit!2sit";
   cambiaMapButton[0].style.backgroundColor = '#b6cc54';
   // Disabilita il bottone quando è stato premuto
   cambiaMapButton[0].disabled = true;
@@ -42,7 +40,7 @@ cambiaMapButton[1].addEventListener("click",() =>{
   cambiaMapButton[2].disabled = false;
   cambiaMapButton[2].style.backgroundColor = 'white';
 
-  mapIframe.src = "";
+  mapIframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2835.436516052606!2d10.592067995984289!3d44.710702008813044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47801b8c7de9f37b%3A0x1e610262186585ef!2sVia%20Fratelli%20Cervi%2C%20132%2F1%2C%2042124%20Reggio%20Emilia%20RE!5e0!3m2!1sit!2sit!4v1716009195096!5m2!1sit!2sit";
   cambiaMapButton[1].style.backgroundColor = '#b6cc54';
   cambiaMapButton[1].disabled=true;
 });
@@ -55,7 +53,7 @@ cambiaMapButton[2].addEventListener("click",() =>{
   cambiaMapButton[1].disabled = false;
   cambiaMapButton[1].style.backgroundColor = 'white';
 
-  mapIframe.src = "";
+  mapIframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.8539465141084!2d11.85501707628652!3d45.69390297107873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778d6271abfdc01%3A0x555ac5f55df4faa7!2sVia%20Chioggia%2C%2047A%2C%2031030%20Alberone%20TV!5e0!3m2!1sit!2sit!4v1716009349067!5m2!1sit!2sit" ;
   cambiaMapButton[2].style.backgroundColor = '#b6cc54';
   cambiaMapButton[2].disabled=true;
 });
