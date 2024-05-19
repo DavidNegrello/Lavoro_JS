@@ -214,37 +214,38 @@ section{
   }
 
   /* Animazioni delle card */
-@keyframes show-data {  /*cambia la posizione verticale delle card quando compaiono */
-    50% {
-      transform: translateY(-10rem);
-    }
-    100% {
-      transform: translateY(-7rem);
-    }
-}
-@keyframes show-overflow {  /*Va a mostrare le card*/
+  @keyframes show-overflow {  /*Va a mostrare le card*/
     0% {
       overflow: initial;
       pointer-events: none;
     }
-    50% {
+    50% { /*Deve aspettare i dati prima di "comparire"*/
       overflow: hidden;
     }
 }
   
-@keyframes remove-data {    /*Va a togliere le scritte*/
-    0% {    
-      transform: translateY(-7rem);
-    }
-    50% {
+@keyframes show-data {  /*cambia la posizione verticale delle card quando compaiono */
+    50% {   /*Si alza prima del 50%*/
       transform: translateY(-10rem);
     }
-    100% {
+    100% {  /*Si alza dal 50% e si ferma al 100%*/
+      transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-data {    /*Va a togliere le scritte*/
+    0% {    /*Quanto si sposta se la card è ferma/mostrata per lo 0%*/
+      transform: translateY(-7rem);
+    }
+    50% { /*Quanto si sposta se la card è ferma/mostrata per il 50%*/
+      transform: translateY(-10rem);
+    }
+    100% {  /*Quanto si sposta se la card è scomparsa con il 100%*/
       transform: translateY(.5rem);
     }
 }
 @keyframes remove-overflow {  /*Va a togliere le card*/
-    to {
+    to { /*Ritorna come all'inizio*/
       overflow: initial;
     }
 }
