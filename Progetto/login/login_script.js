@@ -24,9 +24,9 @@ passwordPosto = document.querySelectorAll(".password");
     })
  //Secondo form 
  function gestisciLogin() {
-    // Nascondi il form di accesso
+    // Nasconde il form di accesso
     document.getElementById('form-login').classList.add('hidden');
     
-    // Mostra il form di ringraziamento
+    // Mostra il form 
     document.getElementById('secondo-form').classList.remove('hidden');
 };   
