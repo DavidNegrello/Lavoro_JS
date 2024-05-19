@@ -1,4 +1,6 @@
+/*Font*/
 @import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
 *{
     font-family: "Sedan SC", serif;
     font-weight: 400;
@@ -16,14 +18,14 @@
     --main-color:#0C719F;
     --text-color:black;
     --bg-color:white;
-    --background:rgba(98, 97, 95, 0.623)
+    --background-body:rgb(118, 115, 111);
 }
 img{
     width: 100%;
 }
 body{
     color: var(--text-color);
-    background-color: rgb(118, 115, 111);
+    background-color: var(--background-body);
 }
 .Container{
     max-width: 1200px;
@@ -212,7 +214,7 @@ section{
   }
 
   /* Animazioni delle card */
-@keyframes show-data {
+@keyframes show-data {  /*cambia la posizione verticale delle card quando compaiono */
     50% {
       transform: translateY(-10rem);
     }
@@ -220,15 +222,18 @@ section{
       transform: translateY(-7rem);
     }
 }
-  
-  @keyframes remove-overflow {
-    to {
+@keyframes show-overflow {  /*Va a mostrare le card*/
+    0% {
       overflow: initial;
+      pointer-events: none;
+    }
+    50% {
+      overflow: hidden;
     }
 }
   
-@keyframes remove-data {
-    0% {
+@keyframes remove-data {    /*Va a togliere le scritte*/
+    0% {    
       transform: translateY(-7rem);
     }
     50% {
@@ -238,17 +243,12 @@ section{
       transform: translateY(.5rem);
     }
 }
-  
-@keyframes show-overflow {
-    0% {
+@keyframes remove-overflow {  /*Va a togliere le card*/
+    to {
       overflow: initial;
-      pointer-events: none;
-    }
-    50% {
-      overflow: hidden;
     }
 }
- 
+
 /*===========Mappa===========*/
 .box {
     font-size: 1.7rem;
