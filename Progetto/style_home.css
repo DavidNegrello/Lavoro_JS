@@ -130,15 +130,6 @@ section{
     font-weight: 300;
     margin: 0.5rem 0 1.2rem;
 }
-.schizza{
-    padding: 10px 22px ;
-    background: var(--main-color);
-    color: var(--bg-color);
-    font-weight: 400;
-}
-.schizza:hover{
-    background: rgba(0, 136, 255, 0.809);
-}
 
 /*===========Selezione marca===========*/
 .generale-container-card{
