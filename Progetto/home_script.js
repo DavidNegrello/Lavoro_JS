@@ -1,6 +1,7 @@
 
 
 //======================per cambiare la mappa====================
+//funzione che gestisce la singola mappa
 function cambiaMappa(index) {
   mapIframe.src = map[index];
   cambiaMapButton.forEach((button, i) => {

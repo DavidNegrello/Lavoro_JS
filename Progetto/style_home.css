@@ -19,6 +19,7 @@
     --text-color:black;
     --bg-color:white;
     --background-body:rgb(118, 115, 111);
+    --footer:#3b3d3b;
 }
 img{
     width: 100%;
@@ -260,4 +261,108 @@ section{
     border: groove white;
     border-radius: .5rem;
     box-shadow: rgb(15, 54, 55 /10%);
+}
+
+/*===========Gruppo===========*/
+.Container-persone {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background-body);
+    padding: 20px; /* Aggiunto padding per spaziatura dalla pagina */
+}
+
+.Container-persone .row {
+    width: 85%;
+    margin: auto;
+}
+
+.Container-persone .row .persone-section {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.Container-persone .row .persone-section h1 {
+    padding: 30px;
+    font-size: 42px;
+}
+
+.Container-persone .row .persone-section p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+    line-height: 1.5;
+    font-size: 17px;
+    text-align: justify;
+}
+.contenuto-persone{
+    display: flex;
+}
+.persona {
+    width: 30%; 
+    max-width: 30%; 
+    margin: 2rem; 
+    padding: 20px; 
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.persona img {
+    width: 100%; 
+    height: auto; 
+}
+
+.contenuto-persone .persona h4{
+    margin-top: 20px;
+}
+.contenuto-persone .persona p{
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/*===========Footer===========*/
+.footer{
+    background: var(--footer);
+}
+.footer .footer-container{
+    margin-left: 15rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,15rem));
+    gap: 1.5rem;
+}
+.footer .footer-container .box-footer h3{
+    color: var(--bg-color);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.footer .footer-container .box-footer a{
+    color: var(--main-color);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    display: block;
+}
+.footer .footer-container .box-footer i{
+    color: var(--bg-color);
+    padding-right: 10px;
+}
+.footer .footer-container .box-footer a i{
+    color: var(--bg-color);
+    padding-right: 20px;
+}
+.footer .footer-container .box-footer a:hover i{
+    padding-right: 10px;
+}
+.footer .footer-container .subscribe-form input{
+    margin-top: 10rem;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.footer .footer-container .subscribe-form button{
+    margin-top: 10rem;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
