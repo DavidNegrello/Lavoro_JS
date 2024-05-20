@@ -167,13 +167,13 @@ section{
     height: 17rem;
 }
 .card-dati{
-    width: 280px;
+    width: 430px;
     background-color: var(--bg-color);
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
     border-radius: 1rem;
     position: absolute;
-    bottom: -9rem;
+    top: -9rem;  /* Cambiato da bottom a top */
     left: 0;
     right: 0;
     margin-inline: auto;
@@ -187,7 +187,6 @@ section{
 }
 .card-bottone {
     text-decoration: none;
-    
     font-weight: 500;
     color: blue;
 }
@@ -199,54 +198,55 @@ section{
     animation: show-data 1s forwards;
     opacity: 1;
     transition: opacity .3s;
-  }
-  
-  .card-article:hover {
+}
+
+.card-article:hover {
     animation: remove-overflow 2s forwards;
-  }
-  
-  .card-article:not(:hover) {
+}
+
+.card-article:not(:hover) {
     animation: show-overflow 2s forwards;
-  }
-  
-  .card-article:not(:hover) .card-dati {
+}
+
+.card-article:not(:hover) .card-dati {
     animation: remove-data 1s forwards;
-  }
+}
 
-  /* Animazioni delle card */
-  @keyframes show-overflow {  /*Va a mostrare le card*/
+/* Animazioni delle card */
+@keyframes show-overflow {  /* Va a mostrare le card */
     0% {
-      overflow: initial;
-      pointer-events: none;
+        overflow: initial;
+        pointer-events: none;
     }
-    50% { /*Deve aspettare i dati prima di "comparire"*/
-      overflow: hidden;
-    }
-}
-  
-@keyframes show-data {  /*cambia la posizione verticale delle card quando compaiono */
-    50% {   /*Si alza prima del 50%*/
-      transform: translateY(-10rem);
-    }
-    100% {  /*Si alza dal 50% e si ferma al 100%*/
-      transform: translateY(-7rem);
+    50% { /* Deve aspettare i dati prima di "comparire" */
+        overflow: hidden;
     }
 }
 
-@keyframes remove-data {    /*Va a togliere le scritte*/
-    0% {    /*Quanto si sposta se la card è ferma/mostrata per lo 0%*/
-      transform: translateY(-7rem);
+@keyframes show-data {  /* Cambia la posizione verticale delle card quando compaiono */
+    50% {   /* Scende prima del 50% */
+        transform: translateY(10rem);
     }
-    50% { /*Quanto si sposta se la card è ferma/mostrata per il 50%*/
-      transform: translateY(-10rem);
-    }
-    100% {  /*Quanto si sposta se la card è scomparsa con il 100%*/
-      transform: translateY(.5rem);
+    100% {  /* Scende dal 50% e si ferma al 100% */
+        transform: translateY(7rem);
     }
 }
-@keyframes remove-overflow {  /*Va a togliere le card*/
-    to { /*Ritorna come all'inizio*/
-      overflow: initial;
+
+@keyframes remove-data {    /* Va a togliere le scritte */
+    0% {    /* Quanto si sposta se la card è ferma/mostrata per lo 0% */
+        transform: translateY(7rem);
+    }
+    50% { /* Quanto si sposta se la card è ferma/mostrata per il 50% */
+        transform: translateY(10rem);
+    }
+    100% {  /* Quanto si sposta se la card è scomparsa con il 100% */
+        transform: translateY(0.5rem);
+    }
+}
+
+@keyframes remove-overflow {  /* Va a togliere le card */
+    to { /* Ritorna come all'inizio */
+        overflow: initial;
     }
 }
 
