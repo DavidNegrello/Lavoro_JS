@@ -268,7 +268,8 @@ section{
     width: 100%;
     min-height: 100vh;
     background-color: var(--background-body);
-    padding: 20px; /* Aggiunto padding per spaziatura dalla pagina */
+    padding: 20px; 
+    margin-top: 5%;
 }
 
 .Container-persone .row {
@@ -299,9 +300,9 @@ section{
     display: flex;
 }
 .persona {
-    width: 30%; 
+    width: 20%; 
     max-width: 30%; 
-    margin: 2rem; 
+    margin: 10rem; 
     padding: 20px; 
     background-color: #fff; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -329,7 +330,7 @@ section{
 .footer .footer-container{
     margin-left: 15rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(25rem,15rem));
+    grid-template-columns: repeat(auto-fit,minmax(25rem,15rem));/*il repeat serve per ripetele la stessa funzione per tot-colonne*/
     gap: 1.5rem;
 }
 .footer .footer-container .box-footer h3{
@@ -365,4 +366,10 @@ section{
     font-size: 17px;
     font-weight: 400;
     letter-spacing: 1px;
+}
+.style-h1-footer{
+    text-align: center;
+    color: var(--bg-color);
+    font-size: 30px;
+    margin-bottom: 1rem;
 }
